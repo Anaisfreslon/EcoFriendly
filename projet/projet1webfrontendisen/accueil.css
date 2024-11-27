@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Marko+One&display=swap');
+
+body{
+    background-color: #FBE9E7;
+}
+.main-nav{
+    background-color:#AFD0BB;
+    font-family: 'Italiana';
+    font-weight: bold;
+    
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 15px ;
+}
+
+.nav_logo{
+    display:flex;
+    justify-content: center;
+}
+
+.design{
+    
+    height: 200px;
+}
