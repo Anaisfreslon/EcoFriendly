@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulaire de Contact</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="contact-section">
+                <h1>Une question ?</h1>
+                <p>Contactez-nous !</p>
+                <img src="Contact.webp" alt="Illustration contact" class="contact-image">
+                <div class="locations">
+                    <div class="location">
+                        <h3>Visiplus Paris</h3>
+                        <p>7 rue Henri Bocquillon<br>75015 Paris</p>
+                        <p> 04 93 00 09 58</p>
+                    </div>
+                    <div class="location">
+                        <h3>Visiplus Nantes</h3>
+                        <p>3 Rue Fulton<br>44000 Nantes</p>
+                        <p> 04 83 58 01 57</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-section">
+                <h2>Demande d'information</h2>
+                <form action="#">
+                    <input type="text" placeholder="Prénom" required>
+                    <input type="text" placeholder="Nom " required>
+                    <input type="email" placeholder="Email " required>
+                    <select required>
+                        <option value="" disabled selected>Département </option>
+                        <option value="01">Ain</option>
+                        <option value="02">Aisne</option>
+                        
+                    </select>
+                    <input type="tel" placeholder="Téléphone " required>
+                    <textarea placeholder="Commentaire" rows="4" required></textarea>
+                    <button type="submit">Envoyer ma demande</button>
+                </form>
+                <p style="text-align: center; margin-top: 10px;">ou nous contacter au <strong>01 86 95 27 81</strong></p>
+            </div>
+        </div>
+    </body>
+    </html>
+    
