@@ -11,4 +11,4 @@ Il permet aux utilisateurs de naviguer entre différentes pages (Accueil, À pro
 - **Navigation fluide** : Une barre de navigation fixe avec des liens vers toutes les sections importantes.
 - **Page d'achat interactive** : Formulaire de commande simple avec des champs pour les informations personnelles et un mode de paiement.
 - **Structure modulaire** : Séparation claire des fichiers HTML, CSS et images.
-- 
+  
