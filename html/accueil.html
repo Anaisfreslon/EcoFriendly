@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil</title>
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="../css/accueil.css" />
+    <!-- Icônes Material -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Première barre de navigation -->
+    <div class="main-nav">
+      <ul>
+        <li>
+          <a href="#"><span class="material-icons">home</span>Accueil</a>
+        </li>
+        <li>
+          <a href="#histoire"
+            ><span class="material-icons">info</span>À Propos</a
+          >
+        </li>
+        <li>
+          <a href="../html/equipe.html"
+            ><span class="material-icons">groups</span>Equipe</a
+          >
+        </li>
+        <li>
+          <a href="../html/contact.html"
+            ><span class="material-icons">contact_page</span>Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- Navigation principale -->
+    <header>
+      <!-- Logo -->
+      <div class="nav_logo">
+        <img src="../img/design.png" class="design" alt="nav_logo" />
+      </div>
+    </header>
+
+    <!-- Menu de navigation secondaire -->
+    <nav>
+      <ul>
+        <li class="deroulant">
+          <a href="#">Guitare</a>
+          <ul class="sous">
+            <li><a href="../html/guitare_electrique.html">Electriques</a></li>
+            <li><a href="../html/guitare_acoustique.html">Acoustique</a></li>
+          </ul>
+        </li>
+        <li class="deroulant">
+          <a href="#">Basse</a>
+          <ul class="sous">
+            <li><a href="../html/basse electrique .html">Electrique</a></li>
+          </ul>
+        </li>
+        <li class="deroulant">
+          <a href="#">Accessoires</a>
+          <ul class="sous">
+            <li><a href="../html/confort.html">Confort</a></li>
+            <li><a href="../html/Outils.html">Outils</a></li>
+          </ul>
+        </li>
+        <li class="deroulant">
+          <a href="#">Upcycling</a>
+          <ul class="sous">
+            <li><a href="../html/Upcycling.html">En savoir plus</a></li>
+            <li><a href="../html/contact.html">Contacter</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Bannière vidéo -->
+    <section class="banner">
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/fRTn03UBTHI"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Section Histoire -->
+    <section class="container" id="histoire">
+      <div class="histoire">
+        <img src="../img/accueil/workshop-4524838_1280.jpg" alt="Histoire" />
+      </div>
+      <div class="text">
+        <h3>Notre Histoire</h3>
+        <p>
+          Nous sommes des passionnés de guitare et de nature. En jouant un jour,
+          on s’est demandé : Pourquoi nos instruments ne reflètent pas nos
+          valeurs ?
+          <br /><br />
+          On a découvert l’impact écologique de la fabrication des guitares :
+          bois exotiques, déchets inutilisés… et on a décidé d’agir.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section Produits -->
+    <section class="container2">
+      <div class="produits">
+        <img src="../img/accueil/imageacceuil1.jpg" alt="Produit" />
+      </div>
+      <div class="text2">
+        <h3>Nos Produits</h3>
+        <p>
+          Nos guitares ne sont pas juste des instruments, elles sont un
+          engagement. Contrairement aux modèles classiques, nos guitares allient
+          qualité sonore exceptionnelle et respect de l’environnement.
+        </p>
+      </div>
+    </section>
+
+    <!-- Grille des produits phares -->
+    <section class="grid-container">
+      <h1>Nos articles phares</h1>
+      <div class="items">
+        <div class="grid-item">
+          <a href="../html/acheter.html">
+            <img src="../img/guitare electrique/Nova.jpg" alt="Nova" />
+          </a>
+          <p>Nova</p>
+        </div>
+        <div class="grid-item">
+          <a href="../html/acheter.html">
+            <img
+              src="../img/guitare acoustique/woodheaven.jpg"
+              alt="WoodHeaven"
+            />
+          </a>
+          <p>WoodHeaven</p>
+        </div>
+        <div class="grid-item">
+          <a href="../html/acheter.html">
+            <img src="../img/basse electrique/Lowtone.jpg" alt="Lowtone" />
+          </a>
+          <p>Lowtone</p>
+        </div>
+        <div class="grid-item">
+          <a href="../html/acheter.html">
+            <img
+              src="../img/guitare electrique/Voltcaster .jpg"
+              alt="VoltCaster"
+            />
+          </a>
+          <p>VoltCaster</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+      <div class="compte">
+        <h2>Rejoignez notre mouvement écologique !</h2>
+        <p>Créez votre compte pour des nouveautés et offres exclusives.</p>
+        <a href="compte.html" class="compte_bouton">Créer un compte</a>
+        <hr />
+      </div>
+      <div class="colonnes">
+        <div class="colonne1_footer">
+          <h3>À propos de nous</h3>
+          <p>
+            Chez Eco-friendly, nous transformons des matériaux recyclés en
+            instruments de musique uniques.
+          </p>
+        </div>
+        <div class="colonne2_footer">
+          <h3>Liens utiles</h3>
+          <ul>
+            <li><a href="../html/accueil.html">Accueil</a></li>
+            <li><a href="../html/acheter.html">Produits</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="colonne3_footer">
+          <h3>Suivez-nous</h3>
+          <div class="reseaux">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="material-icons">facebook</i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="material-icons">instagram</i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <p>&copy; 2024 VotreSite. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>

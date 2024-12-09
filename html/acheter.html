@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acheter - Votre produit préféré</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../code/css/acheter.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Section produit -->
+      <div class="product-section">
+        <h1>Produit à Acheter</h1>
+        <p>
+          Vous souhaitez acheter ce magnifique produit ? Complétez votre
+          commande ici !
+        </p>
+        <img
+          src="../img/contact/Photo contact.png"
+          alt="Produit Image"
+          class="product-image"
+        />
+      </div>
+
+      <!-- Formulaire de commande -->
+      <div class="form-section">
+        <h2>Formulaire de Commande</h2>
+        <form action="#">
+          <input type="text" placeholder="Prénom" required />
+          <input type="text" placeholder="Nom" required />
+          <input type="email" placeholder="Email" required />
+          <input type="tel" placeholder="Numéro de téléphone" required />
+          <textarea
+            placeholder="Adresse de livraison"
+            rows="4"
+            required
+          ></textarea>
+
+          <select required>
+            <option value="" disabled selected>
+              Choisissez un mode de paiement
+            </option>
+            <option value="carte">Carte bancaire</option>
+            <option value="paypal">PayPal</option>
+            <option value="virement">Virement bancaire</option>
+          </select>
+
+          <button type="submit">Confirmer la commande</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
