@@ -189,7 +189,7 @@ nav > ul li:hover .sous {
   position: relative;
   width: 100%;
   height: 600px;
-  background: url("../img/accueil/bass-guitar-1841186_1920.jpg") no-repeat center center;
+  background: url("img/accueil/bass-guitar-1841186_1920.jpg") no-repeat center center;
   background-size: cover; /* Pour couvrir toute la bannière */
 }
 
