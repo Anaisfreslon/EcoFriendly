@@ -1,34 +1,79 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Créer un compte</title>
-    <link rel="stylesheet" href="../css/compte.css">
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <button class="btn">Connexion</button>
-            <button class="btn active">Créer un compte</button>
-        </div>
-        <div class="form-container">
-            <h1>Créez votre compte</h1>
-            <p>La création d’un compte est libre et gratuite. Ce compte vous permettra de découvrir nos nouveautés et de suivre notre activité et d'en être informé.</p>
-            <form>
-                <input type="text" placeholder="Votre pseudonyme" required>
-                <input type="email" placeholder="Votre e.mail" required>
-                <input type="text" placeholder="Votre prénom" required>
-                <input type="text" placeholder="Votre nom" required>
-                <input type="password" placeholder="Mot de passe souhaité" required>
-                <input type="password" placeholder="Confirmez le mot de passe" required>
-                <button type="submit">Créer un compte</button>
-            </form>
-            <div class="links">
-                <a href="#">Nous contacter</a>
-                <a href="#">Vie privée</a>
-            </div>
-        </div>
+    <link rel="stylesheet" href="../css/compte.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Section de navigation principale (menu) -->
+    <div class="main-nav">
+      <ul>
+        <li>
+          <a href="../html/index.html">
+            <span class="material-icons">home</span>Accueil
+          </a>
+        </li>
+        <li>
+          <a href="#histoire">
+            <span class="material-icons">info</span>À Propos
+          </a>
+        </li>
+        <li>
+          <a href="../html/equipe.html">
+            <span class="material-icons">groups</span>Equipe
+          </a>
+        </li>
+        <li>
+          <a href="../html/contact.html">
+            <span class="material-icons">contact_page</span>Contact
+          </a>
+        </li>
+      </ul>
     </div>
-</body>
+    
+    <!-- Conteneur principal de la page de création de compte -->
+    <div class="container">
+      <div class="header">
+        <!-- Bouton de connexion -->
+        <button class="btn">Connexion</button>
+        <button class="btn active">Créer un compte</button>
+      </div>
+      
+      <!-- Formulaire pour créer un compte -->
+      <div class="form-container">
+        <h1>Créez votre compte</h1>
+        <p>
+          La création d’un compte est libre et gratuite. Ce compte vous
+          permettra de découvrir nos nouveautés et de suivre notre activité et
+          d'en être informé.
+        </p>
+        
+        <form>
+          <input type="text" placeholder="Votre pseudonyme" required />
+          <input type="email" placeholder="Votre e.mail" required />
+          <input type="text" placeholder="Votre prénom" required />
+          <input type="text" placeholder="Votre nom" required />
+          <input type="password" placeholder="Mot de passe souhaité" required />
+          <input
+            type="password"
+            placeholder="Confirmez le mot de passe"
+            required
+          />
+          <!-- Bouton pour soumettre le formulaire -->
+          <button type="submit">Créer un compte</button>
+        </form>
+        
+        <div class="links">
+          <a href="#">Nous contacter</a>
+          <a href="#">Vie privée</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

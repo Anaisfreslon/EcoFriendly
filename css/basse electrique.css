@@ -1,17 +1,21 @@
+/* Reset de marge et padding pour tous les éléments */
 * {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Importation des polices de Google */
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Marko+One&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
+/* Styles généraux du corps de la page */
 body {
-    background-color: #FBE9E7;
+    background-color: #FBE9E7; /* Couleur de fond douce */
 }
 
+/* Barre de navigation principale */
 .main-nav {
     background-color: #AFD0BB;
     font-family: 'Italiana';
@@ -22,6 +26,7 @@ body {
     z-index: 1000;
 }
 
+/* Liste horizontale de navigation */
 .main-nav ul {
     display: flex;
     justify-content: center;
@@ -29,11 +34,13 @@ body {
     gap: 20px;
 }
 
+/* Styles des éléments de navigation */
 .main-nav ul li {
     display: flex;
     align-items: center;
 }
 
+/* Liens dans la barre de navigation */
 .main-nav a {
     text-decoration: none;
     color: #004d00;
@@ -43,15 +50,18 @@ body {
     align-items: center;
 }
 
+/* Effet de survol des liens */
 .main-nav a:hover {
     background-color: #ffcc80;
     color: #ffffff;
 }
 
+/* Icônes dans la barre de navigation */
 .main-nav a .material-icons {
     margin-right: 8px;
 }
 
+/* Logo de la bannière */
 .nav_logo {
     display: flex;
     justify-content: center;
@@ -62,6 +72,7 @@ body {
     height: 200px;
 }
 
+/* Bannière principale */
 .banner {
     width: 100%;
     height: 600px;
@@ -70,6 +81,7 @@ body {
     background-color: #000;
 }
 
+/* Image de la bannière */
 .banner img {
     width: 100%;
     height: auto;
@@ -79,27 +91,33 @@ body {
     transform: translate(-50%, -50%);
 }
 
+/* Texte sur la bannière */
 .banner-text {
-    font-family: 'Playfair Display', serif; 
+    font-family: 'Playfair Display', serif;
     text-align: center;
-    font-size: 2em; 
+    font-size: 2em;
     font-weight: 700;
-    color: #004d00; 
+    color: #004d00;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-top: 50px;
     margin-bottom: 20px;
 }
 
+/* Adaptation de la taille de la bannière et du texte sur les petits écrans */
 @media (max-width: 768px) {
+    /* Réduction de la hauteur de la bannière sur mobile */
     .banner {
         height: 300px;
     }
 
+    /* Réduction de la taille du texte sur mobile */
     .banner-text {
-        font-size: 1.5em; /* Taille plus petite sur mobile */
+        font-size: 1.5em;
         margin-top: 10px;
     }
 }
+
+/* Menu de navigation secondaire (barre de menu horizontale) */
 nav {
     width: 100%;
     margin: 0 auto;
@@ -109,24 +127,28 @@ nav {
     z-index: 1000;
 }
 
+/* Liste de navigation dans le menu secondaire */
 nav ul {
     list-style-type: none;
     padding-left: 0;
 }
 
+/* Élément de menu dans le nav secondaire */
 nav ul li {
     float: left;
     width: 25%;
     text-align: center;
-    position: relative; 
+    position: relative;
 }
 
+/* Clearfix pour le menu secondaire */
 nav ul::after {
     content: "";
     display: table;
     clear: both;
 }
 
+/* Liens dans le menu secondaire */
 nav a {
     display: block;
     text-decoration: none;
@@ -135,11 +157,13 @@ nav a {
     padding: 10px 0px;
 }
 
+/* Effet de survol dans le menu secondaire */
 nav a:hover {
     color: #00796b;
     border-bottom: 2px solid #00796b;
 }
 
+/* Menu déroulant caché initialement */
 .sous {
     display: none;
     box-shadow: 0px 1px 2px #FBE9E7;
@@ -149,10 +173,12 @@ nav a:hover {
     z-index: 1000;
 }
 
+/* Affichage du menu déroulant au survol */
 nav > ul li:hover .sous {
     display: block;
 }
 
+/* Liens dans les sous-menus */
 .sous li {
     width: 100%;
     text-align: left;
@@ -168,15 +194,18 @@ nav > ul li:hover .sous {
     background-color: #FBE9E7;
 }
 
+/* Icône de flèche indiquant un menu déroulant */
 .deroulant > a::after {
     content: " ▼";
     font-size: 12px;
 }
 
+/* Espacement de la grille des produits */
 .espace {
     border-bottom: 50px;
 }
 
+/* Grille pour afficher les produits */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -186,9 +215,10 @@ nav > ul li:hover .sous {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding:20px;
+  padding: 20px;
 }
 
+/* Élément de la grille des produits */
 .grid-item {
   display: flex;
   flex-direction: column;
@@ -200,6 +230,7 @@ nav > ul li:hover .sous {
   box-sizing: border-box;
 }
 
+/* Images des produits */
 .grid-item img {
   width: 100%;
   max-width: 200px;
@@ -209,28 +240,30 @@ nav > ul li:hover .sous {
   transition: transform 0.3s ease;
 }
 
+/* Effet au survol des images */
 .grid-item img:hover {
   transform: scale(1.1);
 }
 
+/* Texte sous l'image des produits */
 .grid-item p {
   margin-top: 10px;
   font-size: 16px;
   font-weight: bold;
   flex-grow: 1;
-  display:flex;
+  display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
 }
 
-/* Style pour les prix */
+/* Style des prix */
 .price {
     font-size: 18px;
-    color: #00796b
+    color: #00796b;
 }
 
-
+/* Section "Créez votre compte" */
 .compte {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -242,6 +275,7 @@ nav > ul li:hover .sous {
   padding-top: 60px;
 }
 
+/* Conteneur du bouton de création de compte */
 .container_button {
   display: flex;
   justify-content: center;
@@ -249,6 +283,7 @@ nav > ul li:hover .sous {
   height: 100%;
 }
 
+/* Bouton de création de compte avec animation */
 .compte_bouton {
   padding: 10px 20px;
   font-size: 16px;
@@ -260,7 +295,7 @@ nav > ul li:hover .sous {
   animation: change-color 5s infinite alternate;
 }
 
-
+/* Animation du bouton de création de compte */
 @keyframes change-color {
     0% {
         background-color: #62c990; 
@@ -273,15 +308,18 @@ nav > ul li:hover .sous {
     }
 }
 
+/* Footer général */
 footer {
   background-color: #afd0bb;
 }
 
+/* Mise en page des colonnes dans le footer */
 .colonnes {
   display: flex;
   margin-top: 50px;
 }
 
+/* Colonne de texte à propos dans le footer */
 .colonne1_footer {
   flex: 2;
   overflow: hidden;
@@ -290,8 +328,8 @@ footer {
   gap: 50px;
 }
 
+/* Colonne des liens utiles dans le footer */
 .colonne2_footer {
-  /* display: flex; */
   flex: 1;
 }
 
@@ -299,11 +337,13 @@ footer {
   list-style-type: none;
 }
 
+/* Colonne des réseaux sociaux dans le footer */
 .colonne3_footer {
   flex: 1;
   text-align: center;
 }
 
+/* Alignement des icônes de réseaux sociaux */
 .reseaux {
   display: flex;
   justify-content: center;
@@ -311,6 +351,7 @@ footer {
   margin-top: 10px;
 }
 
+/* Style des icônes de réseaux sociaux */
 .reseaux a {
   text-decoration: none;
   color: #004d40;
@@ -318,12 +359,20 @@ footer {
   transition: color 0.3s ease;
 }
 
+/* Effet de survol des icônes de réseaux sociaux */
 .reseaux a:hover {
   color: #00796b;
 }
 
+/* Copyright et texte du footer */
 footer p {
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
 }
+
+/* Adaptation mobile : Grille de produits responsive */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns
+  }}

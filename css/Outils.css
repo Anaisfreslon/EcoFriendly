@@ -1,180 +1,180 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Marko+One&display=swap');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Marko+One&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 
 body {
-    background-color: #FBE9E7;
+  background-color: #fbe9e7;
 }
 
 .main-nav {
-    background-color: #AFD0BB;
-    font-family: 'Italiana';
-    font-weight: bold;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  background-color: #afd0bb;
+  font-family: "Italiana";
+  font-weight: bold;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .main-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 20px;
 }
 
 .main-nav ul li {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .main-nav a {
-    text-decoration: none;
-    color: #004d00;
-    padding: 10px 15px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
+  text-decoration: none;
+  color: #004d00;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .main-nav a:hover {
-    background-color: #ffcc80;
-    color: #ffffff;
+  background-color: #ffcc80;
+  color: #ffffff;
 }
 
 .main-nav a .material-icons {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .nav_logo {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .design {
-    height: 200px;
+  height: 200px;
 }
 
 .banner {
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-    position: relative;
-    background-color: #000;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
 }
 
 .banner img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .banner-text {
-    font-family: 'Playfair Display', serif; 
-    text-align: center;
-    font-size: 2em; 
-    font-weight: 700;
-    color: #004d00; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-top: 50px;
-    margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  color: #004d00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
-    .banner {
-        height: 300px;
-    }
+  .banner {
+    height: 300px;
+  }
 
-    .banner-text {
-        font-size: 1.5em; /* Taille plus petite sur mobile */
-        margin-top: 10px;
-    }
+  .banner-text {
+    font-size: 1.5em; /* Taille plus petite sur mobile */
+    margin-top: 10px;
+  }
 }
 nav {
-    width: 100%;
-    margin: 0 auto;
-    background-color: #FBE9E7;
-    position: sticky;
-    top: 60px;
-    z-index: 1000;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fbe9e7;
+  position: sticky;
+  top: 60px;
+  z-index: 1000;
 }
 
 nav ul {
-    list-style-type: none;
-    padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 nav ul li {
-    float: left;
-    width: 25%;
-    text-align: center;
-    position: relative; 
+  float: left;
+  width: 25%;
+  text-align: center;
+  position: relative;
 }
 
 nav ul::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 nav a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    border-bottom: 2px solid transparent;
-    padding: 10px 0px;
+  display: block;
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid transparent;
+  padding: 10px 0px;
 }
 
 nav a:hover {
-    color: #00796b;
-    border-bottom: 2px solid #00796b;
+  color: #00796b;
+  border-bottom: 2px solid #00796b;
 }
 
 .sous {
-    display: none;
-    box-shadow: 0px 1px 2px #FBE9E7;
-    background-color: #FBE9E7;
-    position: absolute;
-    width: 100%;
-    z-index: 1000;
+  display: none;
+  box-shadow: 0px 1px 2px #fbe9e7;
+  background-color: #fbe9e7;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
 }
 
 nav > ul li:hover .sous {
-    display: block;
+  display: block;
 }
 
 .sous li {
-    width: 100%;
-    text-align: left;
+  width: 100%;
+  text-align: left;
 }
 
 .sous a {
-    padding: 10px;
-    border-bottom: none;
+  padding: 10px;
+  border-bottom: none;
 }
 
 .sous a:hover {
-    border-bottom: none;
-    background-color: #FBE9E7;
+  border-bottom: none;
+  background-color: #fbe9e7;
 }
 
 .deroulant > a::after {
-    content: " ▼";
-    font-size: 12px;
+  content: " ▼";
+  font-size: 12px;
 }
 
 .espace {
-    border-bottom: 50px;
+  border-bottom: 50px;
 }
 
 .grid-container {
@@ -186,7 +186,7 @@ nav > ul li:hover .sous {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding:20px;
+  padding: 20px;
 }
 
 .grid-item {
@@ -217,17 +217,16 @@ nav > ul li:hover .sous {
   font-size: 16px;
   font-weight: bold;
   flex-grow: 1;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 /* Style pour les prix */
 .price {
-    font-size: 18px;
-    color: #00796b
+  font-size: 18px;
+  color: #00796b;
 }
-
 
 .compte {
   font-family: Arial, Helvetica, sans-serif;
@@ -258,17 +257,16 @@ nav > ul li:hover .sous {
   animation: change-color 5s infinite alternate;
 }
 
-
 @keyframes change-color {
-    0% {
-        background-color: #62c990; 
-    }
-    50% {
-        background-color: #ff80bf; 
-    }
-    100% {
-        background-color: #ffd700; 
-    }
+  0% {
+    background-color: #62c990;
+  }
+  50% {
+    background-color: #ff80bf;
+  }
+  100% {
+    background-color: #ffd700;
+  }
 }
 
 footer {
