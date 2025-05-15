@@ -24,6 +24,19 @@ body {
   z-index: 1000;
 }
 
+/*Horloge & Chrono*/
+#menu-time {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background-color: #e0e0e0;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+
 /* Style des liens dans la navigation principale */
 .main-nav ul {
   display: flex;
@@ -463,3 +476,4 @@ footer p {
     padding: 10px;
   }
 }
+

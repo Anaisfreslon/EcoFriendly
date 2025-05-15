@@ -11,8 +11,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <script src="index.js" defer></script>
   </head>
   <body>
+
     <!-- Première barre de navigation -->
     <div class="main-nav">
       <ul>
@@ -27,7 +29,7 @@
           >
         </li>
         <li>
-          <a href="html/equipe.html"
+          <a href="html/equipe.html" id="equipe-link"
             ><span class="material-icons">groups</span>Equipe</a
           >
         </li>
@@ -40,11 +42,31 @@
     </div>
     <!-- Navigation principale -->
     <header>
+    <!-- Loader -->  
+  <div class="circle-container">
+        <div class="note" data-note="♩"></div>
+        <div class="note" data-note="♪"></div>
+        <div class="note" data-note="♫"></div>
+        <div class="note" data-note="♬"></div>
+        <div class="note" data-note="♩"></div>
+        <div class="note" data-note="♪"></div>
+        <div class="note" data-note="♫"></div>
+        <div class="note" data-note="♬"></div>
+    </div>
+
       <!-- Logo -->
       <div class="nav_logo">
-        <img src="img/design.png" class="design" alt="nav_logo" />
+        <a href="index.html">
+          <img src="img/design.png" class="design" alt="nav_logo" />
+        </a>
       </div>
     </header>
+
+    <!-- HORLOGE & CHRONOMÈTRE -->
+    <div id="menu-time">
+      <span id="clock">Horloge : --:--:--</span>
+      <span id="timer">Temps sur la page : 0s</span>
+    </div>
 
     <!-- Menu de navigation secondaire -->
     <nav>
