@@ -251,3 +251,29 @@ h1 {
     color: #005bb5;
 }
 
+.team-member {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Canvas recouvre toute la carte team-member */
+canvas.grattage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  /* background-color: rgba(128, 128, 128, 0.9); /* Gris opaque */
+  z-index: 10;
+  cursor: crosshair;
+}
+.infos-temps {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f8f8;
+  font-size: 0.95em;
+  font-weight: bold;
+}
+
