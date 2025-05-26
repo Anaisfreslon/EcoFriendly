@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Rencontrer l'équipe</title>
     <link rel="stylesheet" href="../css/equipe.css" />
     <link
@@ -10,32 +10,27 @@
       rel="stylesheet"
     />
     <script src="../js/index.js" defer></script>
-    <script src="../js/timers.js" defer></script>
+    <script src="../js/timer.js" defer></script>
+    <script src="../js/equipe.js" defer></script>
+    <script src="../js/footer.js" defer></script>
   </head>
+
   <body>
     <div class="main-nav">
-      <ul>
-        <li>
-          <a href="../index.html"
-            ><span class="material-icons">home</span>Accueil</a
-          >
-        </li>
-        <li>
-          <a href="../index.html"
-            ><span class="material-icons">info</span>À Propos</a
-          >
-        </li>
-        <li>
-          <a href="equipe.html"
-            ><span class="material-icons">groups</span>Equipe</a
-          >
-        </li>
-        <li>
-          <a href="contact.html"
-            ><span class="material-icons">contact_page</span>Contact</a
-          >
-        </li>
-      </ul>
+      <div class="nav-content">
+        <ul>
+          <li><a href="../index.html"><span class="material-icons">home</span>Accueil</a></li>
+          <li><a href="../index.html"><span class="material-icons">info</span>À Propos</a></li>
+          <li><a href="equipe.html"><span class="material-icons">groups</span>Equipe</a></li>
+          <li><a href="contact.html"><span class="material-icons">contact_page</span>Contact</a></li>
+        </ul>
+
+        <!-- Boutons à droite -->
+        <div id="edition-container">
+          <button id="edit-mode-btn">Mode édition</button>
+          <button id="add-member-btn" style="display: none;">Ajouter un membre</button>
+        </div>
+      </div>
     </div>
 
     <section class="team-section">
@@ -46,7 +41,7 @@
         <div class="team-member">
           <canvas class="grattage"></canvas>
           <img src="../img/equipe/Photo1.png" alt="Bob Brown" />
-          <h3>Bob Brown</h3>
+          <h3 class="member-name">Bob Brown</h3>
           <p>Luthier</p>
           <p>
             Passionné par la fabrication d'instruments uniques, Bob met son
@@ -58,13 +53,15 @@
             <a href="#">Twitter</a>
             <a href="#">LinkedIn</a>
           </div>
+
+          <button class="delete-btn" style="display: none;">🗑️</button>
         </div>
 
         <!-- Membre 2 -->
         <div class="team-member">
           <canvas class="grattage"></canvas>
           <img src="../img/equipe/Photo2.png" alt="Anaïs Freslon" />
-          <h3>Anaïs Freslon</h3>
+          <h3 class="member-name">Anaïs Freslon</h3>
           <p>Présidente</p>
           <p>
             En tant que présidente, Anaïs dirige avec conviction et vision,
@@ -75,13 +72,15 @@
             <a href="#">Twitter</a>
             <a href="#">LinkedIn</a>
           </div>
+
+          <button class="delete-btn" style="display: none;">🗑️</button>
         </div>
 
         <!-- Membre 3 -->
         <div class="team-member">
           <canvas class="grattage"></canvas>
           <img src="../img/equipe/Phot3.png" alt="Jonh Rich" />
-          <h3>Jonh Rich</h3>
+          <h3 class="member-name">Jonh Rich</h3>
           <p>Expert de l'environnement</p>
           <p>
             Spécialiste des enjeux écologiques, Jonh travaille sur des solutions
@@ -92,13 +91,15 @@
             <a href="#">Twitter</a>
             <a href="#">LinkedIn</a>
           </div>
+
+          <button class="delete-btn" style="display: none;">🗑️</button>
         </div>
 
         <!-- Membre 4 -->
         <div class="team-member">
           <canvas class="grattage"></canvas>
           <img src="../img/equipe/Photo4.png" alt="Elise Albaret" />
-          <h3>Elise Albaret</h3>
+          <h3 class="member-name">Elise Albaret</h3>
           <p>Co-Présidente</p>
           <p>
             Avec une approche collaborative, Elise co-dirige pour favoriser
@@ -109,13 +110,15 @@
             <a href="#">Twitter</a>
             <a href="#">LinkedIn</a>
           </div>
+
+          <button class="delete-btn" style="display: none;">🗑️</button>
         </div>
 
         <!-- Membre 5 -->
         <div class="team-member">
           <canvas class="grattage"></canvas>
-          <img src="../img/equipe/Phot3.png" alt="Nat Reynolds" />
-          <h3>Nat Reynolds</h3>
+          <img src="../img/equipe/Photo3.png" alt="Nat Reynolds" />
+          <h3 class="member-name">Nat Reynolds</h3>
           <p>Responsable de Communication</p>
           <p>
             Nat excelle dans la création de stratégies de communication
@@ -127,8 +130,23 @@
             <a href="#">Twitter</a>
             <a href="#">LinkedIn</a>
           </div>
+
+          <button class="delete-btn" style="display: none;">🗑️</button>
         </div>
       </div>
     </section>
+    <!-- Pied de page -->
+    <footer>
+      <div class="infos-campus">
+        <p>Adresse : 20 Rue Cuirassé Bretagne, 29200 Brest | Téléphone : <span class="phone-number">+33298000000</span></p>
+        <p>Adresse : 8 Rue du Professeur Joseph Rousselot, 14000 Caen | Téléphone : <span class="phone-number">+33231456000</span></p>
+        <p>Adresse : 33 Quai Malakoff, 44000 Nantes | Téléphone : <span class="phone-number">+33251101000</span></p>
+        <p>Adresse : 2 Rue de la Carrière, 35000 Rennes | Téléphone : <span class="phone-number">+33223240000</span></p>
+      </div>
+      <p>&copy; 2024 VotreSite. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Sonnerie -->
+    <audio id="clickSound" src="../audio/son.mp3" preload="auto"></audio>
   </body>
 </html>

@@ -277,3 +277,84 @@ canvas.grattage {
   font-weight: bold;
 }
 
+
+/* Conteneur flex pour la nav */
+.main-nav .nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Boutons édition */
+#edition-container {
+  display: flex;
+  gap: 10px;
+}
+
+#edit-mode-btn,
+#add-member-btn {
+  padding: 8px 12px;
+  background-color: #004d00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#edit-mode-btn.editing {
+  background-color: #e74c3c;
+}
+
+footer {
+  background-color: #afd0bb;
+  padding: 30px 20px;
+  color: #333;
+  border-top: 4px solid #6ccda4;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: auto;
+}
+
+footer .infos-campus p {
+  margin: 5px 0;
+}
+
+.phone-number {
+  font-weight: bold;
+  color: #004d00;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.phone-number:hover {
+  color: #00796b;
+}
+
+footer p:last-child {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    width: 80%;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+}
