@@ -64,18 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Affiche le loader pendant 2 secondes au chargement de la page
-window.addEventListener("load", function () {
-  var loader = document.getElementById("loader");
-
-  // Affiche le loader (au cas où il était caché)
-  loader.style.display = "flex";
-
-  // Masque le loader après 2 secondes
-  setTimeout(function () {
-    loader.style.display = "none";
-  }, 2000);
-});
 
 //code pour le grattage
 
@@ -134,3 +122,43 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   });
 });
+
+
+//code pour l'attente du loader 
+document.addEventListener("DOMContentLoaded", function () {
+  // // Sélectionne tous les liens de la page
+  // const links = document.querySelectorAll("a[href]");
+
+  // links.forEach(function (link) {
+  //   link.addEventListener("click", function (e) {
+  //     e.preventDefault(); // Empêche la navigation immédiate
+
+  //     const destination = this.href; // Récupère l'URL de destination
+
+  //     // Affiche le loader
+  //     const loader = document.getElementById("loader");
+  //     if (loader) {
+  //       loader.style.display = "flex"; // Assurez-vous que le loader utilise 'display: flex' ou une autre valeur appropriée
+  //     }
+
+  //     // Attend 2 secondes, puis navigue vers la page
+  //     setTimeout(function () {
+  //       window.location.href = destination;
+  //     }, 2000);
+  //   });
+  // });
+  
+});
+
+// 1ere étape : faire un choix
+//          1. copier coller le code html/css du loader sur toutes les pages
+//          2. créer et supprimer les éléments du loader en JS
+//
+// 2ème étape : créer les éléments du loader (createElement), tu peux leur attribuer des classes CSS
+// .style et tout
+// 
+// 3ème étape : créer une animation CSS pour le loader (dans le fichier que je t'ai envoyé)
+// 
+// 4ème étape : faire en sorte que le loader s'affiche pendant 2 secondes avant de rediriger vers la page
+// 
+// 5ème étape : faire en sorte que le loader disparaisse quand la page est chargée

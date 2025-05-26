@@ -1,0 +1,92 @@
+.circle-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    animation: counter-spin 10s linear infinite;
+}
+.note {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+}
+/* Position each note on the circle */
+.note:nth-child(1) {
+    transform: translate(-50%, -50%) translate(150px, 0);
+    animation: moveCircle1 10s linear infinite;
+}
+.note:nth-child(2) {
+    transform: translate(-50%, -50%) translate(106px, 106px);
+    animation: moveCircle2 10s linear infinite;
+}
+.note:nth-child(3) {
+    transform: translate(-50%, -50%) translate(0, 150px);
+    animation: moveCircle3 10s linear infinite;
+}
+.note:nth-child(4) {
+    transform: translate(-50%, -50%) translate(-106px, 106px);
+    animation: moveCircle4 10s linear infinite;
+}
+.note:nth-child(5) {
+    transform: translate(-50%, -50%) translate(-150px, 0);
+    animation: moveCircle5 10s linear infinite;
+}
+.note:nth-child(6) {
+    transform: translate(-50%, -50%) translate(-106px, -106px);
+    animation: moveCircle6 10s linear infinite;
+}
+.note:nth-child(7) {
+    transform: translate(-50%, -50%) translate(0, -150px);
+    animation: moveCircle7 10s linear infinite;
+}
+.note:nth-child(8) {
+    transform: translate(-50%, -50%) translate(106px, -106px);
+    animation: moveCircle8 10s linear infinite;
+}
+/* Animations for each note to move in a circle */
+@keyframes moveCircle1 {
+    from { transform: translate(-50%, -50%) translate(150px, 0) rotate(0deg); }
+    to { transform: translate(-50%, -50%) translate(150px, 0) rotate(-720deg); }
+}
+@keyframes moveCircle2 {
+    from { transform: translate(-50%, -50%) translate(106px, 106px) rotate(0deg); }
+    to { transform: translate(-50%, -50%) translate(106px, 106px) rotate(-720deg); }
+}
+@keyframes moveCircle3 {
+    from { transform: translate(-50%, -50%) translate(0, 150px) rotate(0deg); }
+    to { transform: translate(-50%, -50%) translate(0, 150px) rotate(-720deg); }
+}
+@keyframes moveCircle4 {
+    from { transform: translate(-50%, -50%) translate(-106px, 106px) rotate(0deg); }
+    to { transform: translate(-50%, -50%) translate(-106px, 106px) rotate(-720deg); }
+}
+@keyframes moveCircle5 {
+    from { transform: translate(-50%, -50%) translate(-150px, 0) rotate(0deg); }
+    to { transform: translate(-50%, -50%) translate(-150px, 0) rotate(-720deg); }
+}
+@keyframes moveCircle6 {
+    from { transform: translate(-50%, -50%) translate(-106px, -106px) rotate(0deg); }
+    to { transform: translate(-50%, -50%) translate(-106px, -106px) rotate(-720deg); }
+}
+@keyframes moveCircle7 {
+    from { transform: translate(-50%, -50%) translate(0, -150px) rotate(0deg); }
+    to { transform: translate(-50%, -50%) translate(0, -150px) rotate(-720deg); }
+}
+@keyframes moveCircle8 {
+    from { transform: translate(-50%, -50%) translate(106px, -106px) rotate(0deg); }
+    to { transform: translate(-50%, -50%) translate(106px, -106px) rotate(-720deg); }
+}
+/* Counter-rotate the note content to keep orientation fixed */
+.note::before {
+    content: attr(data-note);
+    display: inline-block;
+    animation: counter-spin 10s linear infinite;
+}
+@keyframes counter-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

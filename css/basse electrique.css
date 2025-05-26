@@ -376,3 +376,13 @@ footer p {
   .grid-container {
     grid-template-columns
   }}
+
+  .infos-temps {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f8f8;
+  font-size: 0.95em;
+  font-weight: bold;
+}
