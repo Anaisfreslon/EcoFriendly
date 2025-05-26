@@ -5,14 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Upcycling</title>
     <link rel="stylesheet" href="../css/Upcycling.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <script src="../js/index.js" defer></script>
-    <script src="../js/timers.js" defer></script>
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="../js/footer.js" defer></script>
   </head>
+
   <body>
     <header class="main-nav">
       <!-- Horloge + Chronomètre -->
@@ -20,32 +16,23 @@
         <div id="clock">Horloge : --:--:--</div>
         <div id="timer">Temps sur le site : 0h 0m 0s</div>
       </div>
-    </header>  
+    </header>
     <!-- Première barre de navigation -->
-     <div class="main-nav">
+    <div class="main-nav">
       <ul>
-        <li>
-          <a href="../index.html"><span class="material-icons">home</span>Accueil</a>
-        </li>
-        <li>
-          <a href="../index.html"><span class="material-icons">info</span>À Propos</a>
-        </li>
-        <li>
-          <a href="equipe.html"><span class="material-icons">groups</span>Equipe</a>
-        </li>
-        <li>
-          <a href="contact.html"><span class="material-icons">contact_page</span>Contact</a>
-        </li>
+        <li><a href="../index.html"><span class="material-icons">home</span>Accueil</a></li>
+        <li><a href="../index.html"><span class="material-icons">info</span>À Propos</a></li>
+        <li><a href="equipe.html"><span class="material-icons">groups</span>Equipe</a></li>
+        <li><a href="contact.html"><span class="material-icons">contact_page</span>Contact</a></li>
       </ul>
     </div>
 
     <!-- Bannière -->
     <div class="nav_logo">
-      <a href="../index.html">
       <img src="../img/design.png" class="design" alt="nav_logo" />
-      </a>
     </div>
 
+    <!-- Menu secondaire -->
     <nav>
       <ul>
         <li class="deroulant">
@@ -78,12 +65,9 @@
       </ul>
     </nav>
 
-     <div class="banner">
-      <img
-        src="../img/guitare acoustique/bannierre acoustique.jpg"
-        alt="Bannière"
-        class="background-image"
-      />
+    <!-- Bannière principale -->
+    <div class="banner">
+      <img src="../img/guitare acoustique/bannierre acoustique.jpg" alt="Bannière" class="background-image" />
     </div>
 
     <!-- Contenu principal -->
@@ -107,28 +91,21 @@
       </div>
     </div>
 
-        <footer>
-        <div class="compte">
+    <!-- Footer -->
+    <footer>
+      <div class="compte">
         <h2>Vous voulez rejoindre notre mouvement écologique ?</h2>
-        <h4>
-          Alors n'hésitez pas à créer votre compte pour être au courant des
-          nouveautés et avoir des offres exclusives !
-        </h4>
+        <h4>Alors n'hésitez pas à créer votre compte pour être au courant des nouveautés et avoir des offres exclusives !</h4>
         <div class="container_button">
-  <a href="Compte.html" class="compte_bouton">Créez ici votre compte</a>
-</div>
+          <a href="Compte.html" class="compte_bouton">Créez ici votre compte</a>
+        </div>
         <hr />
       </div>
+
       <div class="colonnes">
         <div class="colonne1_footer">
           <h3>À propos de nous</h3>
-          <p>
-            Chez Eco-friendly, nous transformons 
-            des matériaux recyclés
-             en instruments de musique uniques. 
-            Chaque note devient un acte pour la planète : 
-            jouez durable, créez l’avenir. 🌍🎶
-          </p>
+          <p>Chez Eco-friendly, nous transformons des matériaux recyclés en instruments de musique uniques. Chaque note devient un acte pour la planète : jouez durable, créez l’avenir. 🌍🎶</p>
         </div>
         <div class="colonne2_footer">
           <h3>Liens utiles</h3>
@@ -139,19 +116,30 @@
           </ul>
         </div>
         <div class="colonne3_footer">
-      <h3>Suivez-nous</h3>
-      <div class="reseaux">
-        <a href="https://www.facebook.com" target="_blank">
-          <i class="material-icons">facebook</i>
-        </a>
-        <a href="https://www.instagram.com" target="_blank">
-          <i class="material-icons">instagram</i>
-        </a>
-      </div>
+          <h3>Suivez-nous</h3>
+          <div class="reseaux">
+            <a href="https://www.facebook.com" target="_blank"><i class="material-icons">facebook</i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="material-icons">instagram</i></a>
+          </div>
         </div>
       </div>
+
+      <div class="infos-campus">
+        <p>Adresse : 20 Rue Cuirassé Bretagne, 29200 Brest | Téléphone : <span class="phone-number">+33298000000</span></p>
+        <p>Adresse : 8 Rue du Professeur Joseph Rousselot, 14000 Caen | Téléphone : <span class="phone-number">+33231456000</span></p>
+        <p>Adresse : 33 Quai Malakoff, 44000 Nantes | Téléphone : <span class="phone-number">+33251101000</span></p>
+        <p>Adresse : 2 Rue de la Carrière, 35000 Rennes | Téléphone : <span class="phone-number">+33223240000</span></p>
+      </div>
+
       <p>&copy; 2024 VotreSite. Tous droits réservés.</p>
     </footer>
-  </body>
+
+    <!-- Audio pour la sonnerie -->
+    <audio id="clickSound" src="../audio/son.mp3" preload="auto"></audio>
+
+    <div id="loader" class="loader">
+      <div class="note">&#9835;</div>
+    </div>
+    
   </body>
 </html>

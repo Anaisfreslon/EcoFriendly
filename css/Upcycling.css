@@ -309,3 +309,93 @@ footer p {
   font-size: 0.95em;
   font-weight: bold;
 }
+
+/* Responsiveness : Ajuste les éléments pour les petits écrans */
+@media (max-width: 768px) {
+  .items {
+    flex-direction: column; /* Les éléments passent sur une seule colonne */
+  }
+
+  .grid-item {
+    width: 100%; /* Les items prennent 100% de la largeur */
+    max-width: 100%;
+  }
+
+  .compte {
+    padding: 30px 20px;
+  }
+
+  .colonne1_footer, .colonne2_footer, .colonne3_footer {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .loader {
+    weight: 120px;
+    height: 120px;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-radius: 50%;
+    border-top: 16px solid #3498db; /* Blue */
+    animation : spin 2s linear infinite
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  }
+
+  #menu-time {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: #e0e0e0;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+.phone-number {
+  font-weight: bold;
+  color: #0066cc;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.phone-number:hover {
+  color: #ff6600;
+  transform: scale(1.1);
+}
+
+.compte_bouton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.compte_bouton:hover {
+  background-color: #45a049;
+}
+
+.grid-item img {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+  transform: scale(1.05);
+}
+
+.phone-number {
+  cursor: pointer;
+  color: #007BFF;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.phone-number:hover {
+  color: #0056b3;
+}

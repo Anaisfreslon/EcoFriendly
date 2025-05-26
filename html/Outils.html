@@ -11,6 +11,7 @@
     />
     <script src="../js/index.js" defer></script>
     <script src="../js/timers.js" defer></script>
+    <script src="../js/footer.js" defer></script>
   </head>
   <body>
     <header class="main-nav">
@@ -130,33 +131,29 @@
       </div>
     </div>
 
+    <!-- Footer -->
     <footer>
       <div class="compte">
         <h2>Vous voulez rejoindre notre mouvement écologique ?</h2>
-        <h4>
-          Alors n'hésitez pas à créer votre compte pour être au courant des
-          nouveautés et avoir des offres exclusives !
-        </h4>
+        <h4>Alors n'hésitez pas à créer votre compte pour être au courant des nouveautés et avoir des offres exclusives !</h4>
         <div class="container_button">
-          <a href="Compte.html" class="compte_bouton"
-            >Créez ici votre compte</a
-          >
+          <a href="Compte.html" class="compte_bouton">Créez ici votre compte</a>
         </div>
         <hr />
       </div>
+
       <div class="colonnes">
         <div class="colonne1_footer">
           <h3>À propos de nous</h3>
           <p>
-            Chez Eco-friendly, nous transformons des matériaux recyclés en
-            instruments de musique uniques. Chaque note devient un acte pour la
-            planète : jouez durable, créez l’avenir. 🌍🎶
+            Chez Eco-friendly, nous transformons des matériaux recyclés en instruments de musique uniques.
+            Chaque note devient un acte pour la planète : jouez durable, créez l’avenir. 🌍🎶
           </p>
         </div>
         <div class="colonne2_footer">
           <h3>Liens utiles</h3>
           <ul>
-            <li><a href="../index.html">index</a></li>
+            <li><a href="../index.html">Accueil</a></li>
             <li><a href="guitare_electrique.html">Produits</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -164,16 +161,27 @@
         <div class="colonne3_footer">
           <h3>Suivez-nous</h3>
           <div class="reseaux">
-            <a href="https://www.facebook.com" target="_blank">
-              <i class="material-icons">facebook</i>
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-              <i class="material-icons">instagram</i>
-            </a>
+            <a href="https://www.facebook.com" target="_blank"><i class="material-icons">facebook</i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="material-icons">instagram</i></a>
           </div>
         </div>
       </div>
+
+      <div class="infos-campus">
+        <p>Adresse : 20 Rue Cuirassé Bretagne, 29200 Brest | Téléphone : <span class="phone-number">+33298000000</span></p>
+        <p>Adresse : 8 Rue du Professeur Joseph Rousselot, 14000 Caen | Téléphone : <span class="phone-number">+33231456000</span></p>
+        <p>Adresse : 33 Quai Malakoff, 44000 Nantes | Téléphone : <span class="phone-number">+33251101000</span></p>
+        <p>Adresse : 2 Rue de la Carrière, 35000 Rennes | Téléphone : <span class="phone-number">+33223240000</span></p>
+      </div>
+
       <p>&copy; 2024 VotreSite. Tous droits réservés.</p>
     </footer>
+    <!-- Sonnerie audio -->
+    <audio id="clickSound" src="../audio/son.mp3" preload="auto"></audio>
+
+    <div id="loader" class="loader">
+      <div class="note">&#9835;</div>
+    </div>
+    
   </body>
 </html>

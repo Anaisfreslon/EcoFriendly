@@ -13,17 +13,11 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <script src="../js/index.js" defer></script>
-    <script src="../js/timers.js" defer></script>
+    <script src="../js/footer.js" defer></script>
   </head>
   <body>
     <!-- Barre de navigation -->
     <header class="main-nav">
-      <!-- Horloge + Chronomètre -->
-      <div class="infos-temps">
-        <div id="clock">Horloge : --:--:--</div>
-        <div id="timer">Temps sur le site : 0h 0m 0s</div>
-      </div>
       <ul>
         <li>
           <a href="../index.html"
@@ -91,5 +85,27 @@
         </form>
       </div>
     </div>
+
+    <!-- Pied de page -->
+    <footer>
+      <div>
+        <p>Adresse : 20 Rue Cuirassé Bretagne, 29200 Brest</p>
+        <p>Téléphone : <span class="phone-number">+33298000000</span></p>
+        <p>Adresse : 8 Rue du Professeur Joseph Rousselot, 14000 Caen</p>
+        <p>Téléphone : <span class="phone-number">+33231456000</span></p>
+        <p>Adresse : 33 Quai Malakoff, 44000 Nantes</p>
+        <p>Téléphone : <span class="phone-number">+33251101000</span></p>
+        <p>Adresse : 2 Rue de la Carrière, 35000 Rennes</p>
+        <p>Téléphone : <span class="phone-number">+33223240000</span></p>
+      </div>
+    </footer>
+
+    <!-- Audio pour la sonnerie -->
+    <audio id="clickSound" src="../audio/son.mp3" preload="auto"></audio>
+
+    <div id="loader" class="loader">
+      <div class="note">&#9835;</div>
+    </div>
+    
   </body>
 </html>
