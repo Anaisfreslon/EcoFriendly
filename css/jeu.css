@@ -1,0 +1,44 @@
+/* Container du jeu Pile ou Face */
+.form-section > div:nth-of-type(2) {
+    background-color: #afd0bb; /* couleur douce comme la nav */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 350px;
+    margin: 20px auto 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+  
+  /* Texte d'instruction */
+  .form-section > div:nth-of-type(2) p:first-child {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #004d00;
+  }
+  
+  /* Boutons Pile/Face */
+  #pile-btn, #face-btn {
+    background-color: #004d00;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 25px;
+    margin: 0 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #pile-btn:hover, #face-btn:hover {
+    background-color: #006633;
+  }
+  
+  /* Message de résultat */
+  .form-section p:nth-of-type(3) {
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  

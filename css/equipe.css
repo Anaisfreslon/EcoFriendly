@@ -16,24 +16,30 @@ body {
     line-height: 1.6;
 }
 .main-nav {
+  display: flex;             /* ajouter flex */
+  justify-content: center;   /* centrer horizontalement */
+  align-items: center;       /* centrer verticalement */
   background-color: #afd0bb;
   font-family: "Italiana";
   font-weight: bold;
   padding: 10px 0;
   position: fixed; 
-    top: 0;
+  top: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 50px;
 }
 
+/* Le ul à l'intérieur reste en flex mais on peut retirer le justify-content */
 .main-nav ul {
   display: flex;
-  justify-content: center; /* Centrer les liens */
-  list-style-type: none;
   gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
+
 
 .main-nav ul li {
   display: flex;
