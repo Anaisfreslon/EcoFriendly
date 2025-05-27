@@ -6,27 +6,18 @@
     <title>Accueil</title>
     <!-- Feuille de style principale -->
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/loader.css" />
     <!-- Icônes Material -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <script src="../js/index.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <script src="js/loader.js"></script>
     
   </head>
   <body>
 
-    <!-- Animation de chargement -->
-    <div class="circle-container">
-        <div class="note" data-note="♩"></div>
-        <div class="note" data-note="♪"></div>
-        <div class="note" data-note="♫"></div>
-        <div class="note" data-note="♬"></div>
-        <div class="note" data-note="♩"></div>
-        <div class="note" data-note="♪"></div>
-        <div class="note" data-note="♫"></div>
-        <div class="note" data-note="♬"></div>
-    </div>
 
     <!-- Première barre de navigation -->
     <div class="main-nav">
@@ -71,38 +62,37 @@
     </div>
 
     <!-- Menu de navigation secondaire -->
-    <nav>
-      <ul>
-        <li class="deroulant">
-          <a href="#">Guitare</a>
-          <ul class="sous">
-            <li><a href="html/guitare_electrique.html">Electriques</a></li>
-            <li><a href="html/guitare_acoustique.html">Acoustique</a></li>
-          </ul>
-        </li>
-        <li class="deroulant">
-          <a href="#">Basse</a>
-          <ul class="sous">
-            <li><a href="html/basse electrique .html">Electrique</a></li>
-          </ul>
-        </li>
-        <li class="deroulant">
-          <a href="#">Accessoires</a>
-          <ul class="sous">
-            <li><a href="html/confort.html">Confort</a></li>
-            <li><a href="html/Outils.html">Outils</a></li>
-          </ul>
-        </li>
-        <li class="deroulant">
-          <a href="#">Upcycling</a>
-          <ul class="sous">
-            <li><a href="html/Upcycling.html">En savoir plus</a></li>
-            <li><a href="html/contact.html">Contacter</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-
+       <nav>
+        <ul>
+          <li class="deroulant">
+            <a href="#">Guitare</a>
+            <ul class="sous">
+              <li><a href="html/guitare_electrique.html" class="delayed-link">Electriques</a></li>
+              <li><a href="html/guitare_electrique.html" class="delayed-link">Acoustique</a></li>
+            </ul>
+          </li>
+          <li class="deroulant">
+            <a href="#">Basse</a>
+            <ul class="sous">
+              <li><a href="html/basse electrique .html" class="delayed-link">Electrique</a></li>
+            </ul>
+          </li>
+          <li class="deroulant">
+            <a href="#">Accessoires</a>
+            <ul class="sous">
+              <li><a href="html/confort.html" class="delayed-link">Confort</a></li>
+              <li><a href="html/Outils.html" class="delayed-link">Outils</a></li>
+            </ul>
+          </li>
+          <li class="deroulant">
+            <a href="#">Upcycling</a>
+            <ul class="sous">
+              <li><a href="html/Upcycling.html" class="delayed-link">En savoir plus</a></li>
+              <li><a href="html/contact.html" class="delayed-link">Contacter</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     <!-- Bannière vidéo -->
     <section class="banner">
       <div class="video-container">
@@ -156,29 +146,26 @@
       <h1>Nos articles phares</h1>
       <div class="items">
         <div class="grid-item">
-          <a href="html/acheter.html">
+          <a href="html/acheter.html" class="delayed-link">
             <img src="img/guitare electrique/Nova.jpg" alt="Nova" />
           </a>
           <p>Nova</p>
         </div>
         <div class="grid-item">
-          <a href="html/acheter.html">
+          <a href="html/acheter.html" class="delayed-link">
             <img src="img/guitare acoustique/woodheaven.jpg" alt="WoodHeaven" />
           </a>
           <p>WoodHeaven</p>
         </div>
         <div class="grid-item">
-          <a href="html/acheter.html">
+          <a href="html/acheter.html" class="delayed-link">
             <img src="img/basse electrique/Lowtone.jpg" alt="Lowtone" />
           </a>
           <p>Lowtone</p>
         </div>
         <div class="grid-item">
-          <a href="html/acheter.html">
-            <img
-              src="img/guitare electrique/Voltcaster .jpg"
-              alt="VoltCaster"
-            />
+          <a href="html/acheter.html" class="delayed-link">
+            <img src="img/guitare electrique/Voltcaster .jpg" alt="VoltCaster" />
           </a>
           <p>VoltCaster</p>
         </div>
@@ -205,8 +192,8 @@
           <h3>Liens utiles</h3>
           <ul>
             <li><a href="../index.html">index</a></li>
-            <li><a href="html/acheter.html">Produits</a></li>
-            <li><a href="html/contact.html">Contact</a></li>
+            <li><a href="html/acheter.html" class="delayed-link">Produits</a></li>
+            <li><a href="html/contact.html" class = "delayed-link">Contact</a></li>
           </ul>
         </div>
         <div class="colonne3_footer">
@@ -223,5 +210,10 @@
       </div>
       <p>&copy; 2024 VotreSite. Tous droits réservés.</p>
     </footer>
+
+    <div id="loader" class="loader">
+      <div class="note">&#9835;</div>
+    </div>
+    
   </body>
 </html>
