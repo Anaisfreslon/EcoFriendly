@@ -477,3 +477,48 @@ footer p {
   }
 }
 
+#menu-time {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background-color: #e0e0e0;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+.phone-number {
+font-weight: bold;
+color: #0066cc;
+cursor: pointer;
+transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.phone-number:hover {
+color: #ff6600;
+transform: scale(1.1);
+}
+
+.compte_bouton {
+background-color: #4CAF50;
+color: white;
+padding: 10px 15px;
+border-radius: 25px;
+text-decoration: none;
+transition: background-color 0.3s ease;
+}
+
+.compte_bouton:hover {
+background-color: #45a049;
+}
+
+.grid-item img {
+border-radius: 15px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+transform: scale(1.05);
+}
+

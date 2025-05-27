@@ -14,7 +14,7 @@ if (window.location.pathname.includes("index")) {
   document.title = "Accueil | Startup EcoFriendly";
 
   // Sinon, si l'URL contient "apropos"
-} else if (window.location.pathname.includes("apropos")) {
+} else if (window.location.pathname.includes("à propos")) {
   // On met le titre "A propos | Startup EcoFriendly"
   document.title = "A propos | Startup EcoFriendly";
 
